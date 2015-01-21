@@ -40,6 +40,11 @@ package com.bit101.components
 		protected var _labelText:String = "";
 		protected var _selected:Boolean = false;
 		
+		private var _shadow:Boolean = true;
+		
+		private var _checkBoxWidth:Number = 10.0;
+		private var _checkBoxHeight:Number = 10.0;
+		
 		
 		/**
 		 * Constructor
@@ -52,6 +57,8 @@ package com.bit101.components
 		public function CheckBox(parent:DisplayObjectContainer = null, xpos:Number = 0, ypos:Number =  0, label:String = "", defaultHandler:Function = null)
 		{
 			_labelText = label;
+			_width = 10;
+			_height = 10;
 			super(parent, xpos, ypos);
 			if(defaultHandler != null)
 			{
@@ -90,8 +97,16 @@ package com.bit101.components
 			addEventListener(MouseEvent.CLICK, onClick);
 		}
 		
-		
-		
+		private function updateShadow():void {
+			if (_shadow) {
+				_button.filters = [getShadow(1)];
+				_back.filters = [getShadow(2, true)];				
+			}
+			else {
+				_button.filters = null;
+				_back.filters = null;	
+			}
+		}
 		
 		///////////////////////////////////
 		// public methods
@@ -105,12 +120,12 @@ package com.bit101.components
 			super.draw();
 			_back.graphics.clear();
 			_back.graphics.beginFill(Style.BACKGROUND);
-			_back.graphics.drawRect(0, 0, 10, 10);
+			_back.graphics.drawRect(0, 0, _checkBoxWidth, _checkBoxHeight);
 			_back.graphics.endFill();
 			
 			_button.graphics.clear();
 			_button.graphics.beginFill(Style.SELECTED);
-			_button.graphics.drawRect(2, 2, 6, 6);
+			_button.graphics.drawRect(_checkBoxWidth* 0.2, _checkBoxHeight * 0.2, _checkBoxWidth* 0.6, _checkBoxHeight * 0.6);
 			
 			_label.text = _labelText;
 			_label.draw();
@@ -178,6 +193,26 @@ package com.bit101.components
 			super.enabled = value;
 			mouseChildren = false;
 		}
+		
+		public function set checkBoxWidth(w:Number):void {
+			_checkBoxWidth = w;
+			draw();
+		}
+		
+		public function set checkBoxHeight(h:Number):void {
+			_checkBoxHeight = h;
+			draw();
+		}
+		
+		public function set shadow(value:Boolean):void {
+			_shadow = value;
+			updateShadow();
+		}
+		
+		public function get shadow():Boolean {
+			return _shadow;
+		}
+		
 
 	}
 }
