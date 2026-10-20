@@ -46,8 +46,8 @@ package com.bit101.components
 	public class Component extends Sprite
 	{
 		// NOTE: Flex 4 introduces DefineFont4, which is used by default and does not work in native text fields.
-		// Use the embedAsCFF="false" param to switch back to DefineFont4. In earlier Flex 4 SDKs this was cff="false".
-		// So if you are using the Flex 3.x sdk compiler, switch the embed statment below to expose the correct version.
+		// Use the embedAsCFF="false" param to switch back to DefineFont3. In earlier Flex 4 SDKs this was cff="false".
+		// So if you are using the Flex 3.x sdk compiler, switch the embed statement below to expose the correct version.
 		
 		// Flex 4.7 (labs/beta) sdk:
 		// SWF generated with fontswf utility bundled with the AIR SDK released on labs.adobe.com with Flash Builder 4.7 (including ASC 2.0) 
@@ -83,7 +83,7 @@ package com.bit101.components
 		}
 		
 		/**
-		 * Initilizes the component.
+		 * Initializes the component.
 		 */
 		protected function init():void
 		{
@@ -92,7 +92,7 @@ package com.bit101.components
 		}
 		
 		/**
-		 * Overriden in subclasses to create child display objects.
+		 * Overridden in subclasses to create child display objects.
 		 */
 		protected function addChildren():void
 		{

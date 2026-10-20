@@ -70,7 +70,7 @@ package com.bit101.components
 		}
 		
 		/**
-		 * Initilizes the component.
+		 * Initializes the component.
 		 */
 		protected override function init():void
 		{

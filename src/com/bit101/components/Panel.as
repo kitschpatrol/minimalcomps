@@ -189,7 +189,7 @@ package com.bit101.components
 		}
 		
 		/**
-		 * Gets / sets the backgrond color of this panel.
+		 * Gets / sets the background color of this panel.
 		 */
 		public function set color(c:int):void
 		{

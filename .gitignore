@@ -9,6 +9,6 @@ bin-release-temp/
 
 .metadata
 .settings
-.air
-.dmg
-.app
+*.air
+*.dmg
+*.app

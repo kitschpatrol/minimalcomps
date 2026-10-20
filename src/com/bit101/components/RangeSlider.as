@@ -382,7 +382,7 @@ package com.bit101.components
 		
 		
 		/**
-		 * Internal mouseDown handler for the low value handle. Starts dragging the handle.
+		 * Internal mouseDown handler for the center handle. Starts dragging the low and high handles together.
 		 * @param event The MouseEvent passed by the system.
 		 */
 		protected function onDragMid(event:MouseEvent):void
@@ -502,13 +502,9 @@ package com.bit101.components
 			{
 				//_lowValue = _minHandle.y / (_height - _width * 2) * (_maximum - _minimum) + _minimum;
 				
-				trace(_minHandle.y);
-				
 				_lowValue = (_height - _width - _minHandle.y) / (height - _width * 2) * (_maximum - _minimum) + _minimum;
 				
 				//_lowValue =  (1 - (_minHandle.y / (_height - _width * 2))) * (_maximum - _minimum) + _minimum;				
-				
-				trace("Low value: " + _lowValue);
 				
 				//_lowValue = ((_height - _minHandle.y) / (_height - _width *2)) * (_maximum - _minimum) + _minimum;
 				_highValue = _lowValue + valueDistance;

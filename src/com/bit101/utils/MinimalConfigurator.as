@@ -95,7 +95,7 @@ package com.bit101.utils
 		}
 		
 		/**
-		 * Parses xml and creates componetns based on it.
+		 * Parses xml and creates components based on it.
 		 * @param xml The xml to parse.
 		 */
 		public function parseXML(xml:XML):void
@@ -205,7 +205,7 @@ package com.bit101.utils
 		}
 		
 		/**
-		 * Returns the componet with the given id, if it exists.
+		 * Returns the component with the given id, if it exists.
 		 * @param id The id of the component you want.
 		 * @return The component with that id, if it exists.
 		 */

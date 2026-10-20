@@ -59,7 +59,7 @@ package com.bit101.components
 		 * @param parent The parent DisplayObjectContainer on which to add this component.
 		 * @param numButtons The number of segments in the menu
 		 * @param outerRadius The radius of the menu as a whole.
-		 * @parem innerRadius The radius of the inner circle at the center of the menu.
+		 * @param innerRadius The radius of the inner circle at the center of the menu.
 		 * @param defaultHandler The event handling function to handle the default event for this component (select in this case).
 		 */
 		public function WheelMenu(parent:DisplayObjectContainer, numButtons:int, outerRadius:Number = 80, iconRadius:Number = 60, innerRadius:Number = 10, defaultHandler:Function = null)

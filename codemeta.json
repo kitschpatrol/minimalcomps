@@ -1,0 +1,42 @@
+{
+  "@context": "https://w3id.org/codemeta/3.1",
+  "@type": "SoftwareSourceCode",
+  "name": "MinimalComps",
+  "description": "Fork of MinimalComps with additional options.",
+  "author": [
+    {
+      "@type": "Person",
+      "email": "eric@ericmika.com",
+      "name": "Eric Mika",
+      "url": "https://ericmika.com"
+    },
+    {
+      "@type": "Person",
+      "name": "Keith Peters",
+      "url": "https://bit-101.com"
+    }
+  ],
+  "keywords": [
+    "actionscript",
+    "as3",
+    "flash",
+    "adobe-air",
+    "ui-components"
+  ],
+  "programmingLanguage": "ActionScript",
+  "runtimePlatform": [
+    "Adobe Flash Player",
+    "Adobe AIR"
+  ],
+  "url": "https://github.com/kitschpatrol/minimalcomps",
+  "codeRepository": "https://github.com/kitschpatrol/minimalcomps",
+  "license": "https://spdx.org/licenses/MIT",
+  "dateCreated": "2011-04-09",
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Adobe AIR SDK",
+      "version": "3.6"
+    }
+  ]
+}

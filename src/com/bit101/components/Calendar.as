@@ -110,7 +110,7 @@ package com.bit101.components
 		}
 		
 		/**
-		 * Gets the last day of the specfied month and year. Needed by layout.
+		 * Gets the last day of the specified month and year. Needed by layout.
 		 * @param month The month to get the last day of.
 		 * @param year The year in which the month is in (needed for leap years).
 		 * @return The last day of the month.
